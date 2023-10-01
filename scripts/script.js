@@ -160,7 +160,3 @@ window.onload = function(){
         notification.style.display = 'block';
     }
 }
-
-
-
-

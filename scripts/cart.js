@@ -91,5 +91,3 @@ function getTotal(){
     subTotal.innerHTML = "Total $" + sum;
 }
 getTotal() //Get total price......
-
-
