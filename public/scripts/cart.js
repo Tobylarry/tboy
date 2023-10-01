@@ -106,15 +106,16 @@ makePayment.addEventListener('click', function(){
             {id: 2, quantity: 8}
         ]
     })
+})
     .then(res=> {
-        if(res.ok) return res.json()
-        return res.json().then(json => Promise.reject(json))
-    })
+        if(res.ok) return res.json();
+        return res.json().then(json => Promise.reject(json));
+    
    })
    .then(({url}) => {
     window.location = url
-   })
+   })//url then
    .catch(e => {
     console.error(e.error)
-   })
-})
+   }) //catch
+})//end button
