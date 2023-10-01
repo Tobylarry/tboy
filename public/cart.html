@@ -21,25 +21,7 @@
 <link rel="stylesheet" href="./style/index.css">
 <link rel="stylesheet" href="./style/sidebar.css">
 <link rel="stylesheet" href="./style/cart.css">
-<script>
 
-    //Coonect payment using stripe.....
-    var stripe = Stripe("pk_test_51NvBf5FUgzkhAezUkrsNEmcdlFHAcawAzvzqyrtNwawjcYbDClLF169giRi6pVySmEYbu6wXl4JrzC9uAEdPaLbX008fTFtVxU");
-document.querySelector('.makePayment').addEventListener("click", function(){
-    stripe.redirectToCheckout({
-        lineItems: [
-            {
-                price: "price_1NvQFvFUgzkhAezUO87L3QZN",
-                quantity: 1
-            }
-        ],
-        mode: "One time",
-        successURL: 'google.com',
-        cancelURL: 'facebook.com'
-    })
-    console.log('yes!!')
-})
-</script>
 </head>
 <body>
     <div>

@@ -5,7 +5,7 @@ let subTotal = document.querySelector('.subTotal');
 let cartItems = JSON.parse(localStorage.getItem('cart')) //get cart  items.....
 let shopMore = document.querySelector('.shopMore');
 let checkTrend = document.querySelector('.checkTrend');
-
+const makePayment = document.querySelector('.makePayment');
 
 // Display cart items.....
     if(cartItems.length > 0){
@@ -91,3 +91,9 @@ function getTotal(){
     subTotal.innerHTML = "Total $" + sum;
 }
 getTotal() //Get total price......
+
+
+//make payment....
+makePayment.addEventListener('click', function(){
+   console.log('checkout')
+})
