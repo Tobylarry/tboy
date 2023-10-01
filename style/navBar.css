@@ -1,0 +1,61 @@
+body{
+    font-family: 'Noticia Text', serif;
+}
+.navBar{
+    display: flex;
+    justify-content:space-between;
+    justify-items:center;
+    align-items: center;
+    width:90%; 
+    margin: 10px auto;
+}
+
+.navBar a{
+    color: black;
+    font-size: 20px;
+}
+
+.navBar .logoNnav{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.navBar img{
+    width:150px;
+    height:120px;
+}
+
+.navBar .navigate ul li{
+    float: left;
+    list-style: none;
+    letter-spacing: 2px;
+    margin: 0 20px 0 0;
+
+}
+
+.navBar .sideLine div{
+   border: 2px solid black;
+   background-color: black;
+   width:30px;
+   margin-bottom:5px;
+}
+
+.navBar .sideLine{
+    display: none;
+}
+
+.sideBar{
+    display: none;
+}
+
+
+  @media only screen and (max-width: 900px) {
+    .navBar .sideLine{
+        display: block;
+    }
+    .navBar .navigate{
+        display: none;
+    }
+  }

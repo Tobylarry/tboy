@@ -1,0 +1,208 @@
+.product img{
+    width:250px;
+    height:250px;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 60px;
+    text-align: center;
+    align-items: center;
+    line-height: 10px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.product h1{
+    font-size: 1.2rem;
+    padding: 5px 0 0 0;
+}
+
+.product h2, .product h3{
+    font-size: 1rem;;
+    opacity: 0.6;
+}
+
+.product h5{
+    font-size: 1.6rem;
+}
+
+.show .mainProduct{
+    width: 200px;
+    height: 200px;
+}
+
+.img1, .img2, .img3{
+    width:100px;
+    height: 100px;
+}
+
+
+.show{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    padding-top: 20px;
+}
+
+.show .all{
+    background-color: white;
+    padding:40px 20px 40px 20px;
+    width:60%;
+    margin: 0 auto;
+}
+
+.show .showProduct{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.show .x{
+    float: right;
+    font-size: 24px;
+}
+
+.bi{
+    position: relative;
+  display: inline-block;
+}
+.notification{
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    display:none;
+}
+
+.unavailable{
+    width: 100%;
+    height:100%;
+    background-color: #ffffff;
+    opacity: 0.2;
+    color: black;
+}
+
+  @media only screen and (max-width: 650px) {
+    .show
+    .show .showProduct{
+       flex-direction: column;
+       width: 80%;
+    }
+
+    .show h1{
+        font-size: 0.8rem;
+        margin-top:5px;
+    }
+    .show h3{
+        font-size: 1.0rem;
+        font-weight: 900;
+    }
+    .show .all{
+        padding:30px 20px 30px 20px;
+        width:90%;
+    }
+
+
+    .show .mainProduct{
+        width: 130px;
+        height: 130px;
+    }
+    .img1, .img2, .img3{
+        width:50px;
+        height: 50px;
+    }
+    .img3{
+        display: none;
+    }
+  }
+
+
+  
+  @media only screen and (min-width: 651px) and (max-width: 1000px) {
+    .show
+    .show .showProduct{
+       flex-direction: column;
+       width: 80%;
+    }
+
+    .show h1{
+        font-size: 1.2rem;
+        margin-top:5px;
+    }
+    .show h3{
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .show .all{
+        padding:30px 20px 30px 20px;
+        width:80%;
+    }
+
+
+    .show .mainProduct{
+        width: 150px;
+        height: 150px;
+    }
+    .img1, .img2, .img3{
+        width:60px;
+        height: 60px;
+    }
+    .img3{
+        display: none;
+    }
+  }
+
+
+  
+  @media only screen and (min-width: 651px) and (max-width: 1000px) {
+    .show
+    .show .showProduct{
+       flex-direction: column;
+       width: 80%;
+    }
+
+    .show h1{
+        font-size: 1.2rem;
+        margin-top:5px;
+    }
+    .show h3{
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .show .all{
+        padding:30px 20px 30px 20px;
+        width:80%;
+    }
+
+
+    .show .mainProduct{
+        width: 150px;
+        height: 150px;
+    }
+    .img1, .img2, .img3{
+        width:60px;
+        height: 60px;
+    }
+    .img3{
+        display: none;
+    }
+  }
+

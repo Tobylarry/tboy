@@ -1,0 +1,41 @@
+.sideBar {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sideBar .close{
+    font-size: 23px;
+    padding: 20px 15px 0 0;
+  }
+ .sideBar .close:hover{
+    color: white;
+ }
+  .sideBar ul{
+    margin-top: 30px;
+  }
+
+  .sideBar ul li{
+    list-style: none;
+    padding-bottom:3px;
+  }
+
+  .sideBar ul li a {
+    display: block;
+    color: grey;
+    text-decoration: none;
+  }
+
+  .sideBar ul li a:hover {
+    color: white;
+  }
+
+

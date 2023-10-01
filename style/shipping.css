@@ -1,0 +1,17 @@
+.shipping{
+    width:60%;
+    margin: 0 auto;
+}
+
+.shipping h1{
+    font-size: 50px;
+    margin: 0 0 30px 0;
+}
+
+.shipping h5{
+    text-decoration: underline;
+}
+
+.shipping p{
+    line-height: 30px;
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../shequira"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tayo"
+	}
+}
