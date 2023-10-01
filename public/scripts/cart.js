@@ -113,7 +113,8 @@ makePayment.addEventListener('click', function(){
     
    })
    .then(({url}) => {
-    window.location = url
+    //window.location = url
+    console.log('HI')
    })//url then
    .catch(e => {
     console.error(e.error)
