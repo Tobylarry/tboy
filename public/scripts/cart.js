@@ -7,7 +7,6 @@ let shopMore = document.querySelector('.shopMore');
 let checkTrend = document.querySelector('.checkTrend');
 const makePayment = document.querySelector('.makePayment');
  
-export default cart = JSON.parse(localStorage.getItem('cart'));
 // Display cart items.....
     if(cartItems.length > 0){
         let obj = JSON.parse(localStorage.getItem('cart'))
