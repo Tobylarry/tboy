@@ -113,9 +113,12 @@ makePayment.addEventListener('click', () => {
    })
    .then(({url}) => {
     window.location = url
-    console.log('HI')
    })//url then
    .catch(e => {
     console.log(e.error)
    }) //catch
+
+   localStorage.setItem('cart', '[]');
+    dett.innerHTML ='EMPTY CART! PLEASE PLACE AN ORDER TO PROCEED';
+    subTotal.innerHTML = "Total $" + 0;
 })//end button

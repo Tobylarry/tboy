@@ -1,12 +1,17 @@
 require('dotenv').config()
 const express = require('express')
-const Stripe = require('stripe');
-const stripe = Stripe('sk_test_51NvBf5FUgzkhAezUY4EWQsiY35sllFZB8wdrKdTMrHvuFYDuXG8hs2XN4VufUe7XM9xIXrqN6pBCAsCtUqy8P6uj00Ill6A9Mu');
+const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY);
+
+const cors = require('cors')
+
 
 const app = express();
 app.set('view engine', 'ejs')
 app.use(express.json())
 app.use(express.static("public"))
+app.use(cors({
+  origin: 'http://localhost:4500'
+}))
 
 
 const cart = new Map([
@@ -35,8 +40,8 @@ app.post('/create-checkout-session', async  (req, res) => {
             quantity: item.quantity
           }
         }),
-        success_url: `${process.env.SERVER_URL}/public/index.html`,
-        cancel_url: `${process.env.SERVER_URL}/cancel.html`
+        success_url: `${process.env.SERVER_URL}/index.html`,
+        cancel_url: `${process.env.SERVER_URL}/cart.html`
       })
       res.json( { url: session.url });
     }
