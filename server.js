@@ -1,16 +1,20 @@
 require('dotenv').config()
 const express = require('express')
+const Stripe = require('stripe');
+const stripe = Stripe('sk_test_51NvBf5FUgzkhAezUY4EWQsiY35sllFZB8wdrKdTMrHvuFYDuXG8hs2XN4VufUe7XM9xIXrqN6pBCAsCtUqy8P6uj00Ill6A9Mu');
 
 const app = express();
 app.set('view engine', 'ejs')
 app.use(express.json())
 app.use(express.static("public"))
-const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY);
 
 
 const cart = new Map([
-  [1, { price: 20, name: 'tory'}],
-  [2, { price: 50, name: 'rex'}]
+  [0, { price: 5000, name: 'Boogy Boyz Black Tshirt'}],
+  [1, { price: 3500, name: 'Boogy Boyz star cap Red'}],
+  [2, { price: 3000, name: 'Boogy Boyz star cap Blue'}],
+  [3, { price: 3000, name: 'Boogy Boyz star cap Black'}],
+  [4, { price: 3000, name: 'Boogy Boyz star cap Orange'}]
 ])
 
 app.post('/create-checkout-session', async  (req, res) => {
@@ -18,7 +22,7 @@ app.post('/create-checkout-session', async  (req, res) => {
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         mode: 'payment',
-        line_items: req.body.cart.map(item => {
+        line_items: req.body.items.map(item => {
           const storeItem = cart.get(item.id)
           return {
             price_data:{
@@ -31,7 +35,7 @@ app.post('/create-checkout-session', async  (req, res) => {
             quantity: item.quantity
           }
         }),
-        success_url: `${process.env.SERVER_URL}/success.html`,
+        success_url: `${process.env.SERVER_URL}/public/index.html`,
         cancel_url: `${process.env.SERVER_URL}/cancel.html`
       })
       res.json( { url: session.url });
@@ -42,4 +46,4 @@ app.post('/create-checkout-session', async  (req, res) => {
     }
     
 })
-app.listen(4000)
+app.listen(4500)

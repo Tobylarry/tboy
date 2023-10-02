@@ -93,7 +93,8 @@ function getTotal(){
 }
 getTotal() //Get total price......
 
-
+let payItem = JSON.parse(localStorage.getItem('cart'))//get price
+console.log(payItem)
 //make payment....
 makePayment.addEventListener('click', () => {
    fetch('/create-checkout-session', {
@@ -102,10 +103,7 @@ makePayment.addEventListener('click', () => {
     'content-type': 'application/json'
     },
     body: JSON.stringify({
-        items:[
-            {id: 1, quantity: 2},
-            {id: 2, quantity: 8}
-        ]
+        items:payItem
     })
 })
     .then(res=> {
