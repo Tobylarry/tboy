@@ -6,6 +6,7 @@ let cartItems = JSON.parse(localStorage.getItem('cart')) //get cart  items.....
 let shopMore = document.querySelector('.shopMore');
 let checkTrend = document.querySelector('.checkTrend');
 const makePayment = document.querySelector('.makePayment');
+
  
 // Display cart items.....
     if(cartItems.length > 0){
@@ -94,7 +95,7 @@ getTotal() //Get total price......
 
 
 //make payment....
-makePayment.addEventListener('click', function(){
+makePayment.addEventListener('click', () => {
    fetch('/create-checkout-session', {
     method: 'POST',
     headers:{
@@ -108,15 +109,15 @@ makePayment.addEventListener('click', function(){
     })
 })
     .then(res=> {
-        if(res.ok) return res.json();
-        return res.json().then(json => Promise.reject(json));
+        if(res.ok) return res.json()
+        return res.json().then(json => Promise.reject(json))
     
    })
    .then(({url}) => {
-    //window.location = url
+    window.location = url
     console.log('HI')
    })//url then
    .catch(e => {
-    console.error(e.error)
+    console.log(e.error)
    }) //catch
 })//end button

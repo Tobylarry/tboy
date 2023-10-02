@@ -20,7 +20,6 @@ let size = document.querySelector('#sizes');
 let value = 0;
 
 
-
 /** image[0].addEventListener('click', function(){
     show.style.display = "block";
     main.src = "./image/blsckTop.jpg"
