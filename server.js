@@ -1,5 +1,5 @@
-
-require('dotenv').config()
+require('dotenv').config();
+import { cart } from './public/scripts/cart';
 
 const express = require('express');
 const app = express();
@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 app.use(express.static("public"))
 const stripe = require('stripe')(process.env.ddjjjf)
 
-const items = JSON.parse(localStorage.getItem('cart'));
+let cartItems = cart;
 
 app.post('/create-checkout-session',async  (req, res) => {
     try{
