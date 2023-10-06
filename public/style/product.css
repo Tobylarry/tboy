@@ -16,9 +16,13 @@
     margin: 50px auto;
 }
 .temp{
-    border: 0.5px solid black;
+    border: 0px solid black;
     border-radius: 10px;
     box-shadow: 7px 7px #888888;
+}
+
+.temp img{
+    border-radius: 10px;
 }
 
 .product h1{
