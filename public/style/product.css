@@ -21,7 +21,10 @@
     height:400px;
     padding: 0 0 15px 0;
 }
-
+.temp:hover{
+    width:280px;
+    height: 410px;
+}
 .temp img{
     width: 100%;
     height: 70%;
