@@ -18,13 +18,14 @@
     box-shadow: 7px 7px #888888;
     padding-bottom: 5px;
     width: 250px;
-    height:320px;
+    height:300px;
 }
 
 .temp img{
     width: 100%;
-    height: 50%;
+    height: 60%;
     border-radius: 10px;
+    margin-bottom:5px;
 }
 
 .product h1{
