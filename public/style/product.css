@@ -16,7 +16,7 @@
     margin: 50px auto;
 }
 .temp{
-    border: none;
+    border: 1px black;
     border-radius: 10px;
     box-shadow: 5px 10px #888888;
 }
