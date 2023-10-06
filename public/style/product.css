@@ -111,6 +111,9 @@
     font-weight: bold;
 }
 
+.shirtH:hover{
+    opacity: 0.6;
+}
   @media only screen and (max-width: 650px) {
     .show
     .show .showProduct{
