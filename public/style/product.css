@@ -106,10 +106,9 @@
 }
 
 .unavailable{
-    width: 100%;
-    height:100%;
-    opacity: 0.2;
     color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
   @media only screen and (max-width: 650px) {
