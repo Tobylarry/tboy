@@ -14,7 +14,7 @@
   "name": "tboy",
   "description": "Tayo website prototype",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.html",
   "keywords": [],
   "author": "",
   "license": "ISC",
