@@ -60,15 +60,6 @@ image[3].addEventListener('click', function(){
     price.innerHTML = '$30.00 USD';
 })
 
-image[4].addEventListener('click', function(){
-    show.style.display = "block";
-    main.src = "./image/black.JPG"
-    img1.src = "./image/trend5.jpg"
-    img2.src = "./image/trend6.jpg"
-    img3.src = "./image/trend10.jpeg"
-    namee.innerHTML = 'Boogy Boyz star cap Orange';
-    price.innerHTML = '$30.00 USD';
-})
 
 x.addEventListener('click', function(){
     show.style.display = 'none';
