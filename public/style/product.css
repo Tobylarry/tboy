@@ -52,8 +52,9 @@
 }
 
 .product h1{
-    font-size: 1.2rem;
-    padding: 5px 0 0 0;
+    font-size: 1.3rem;
+    padding: 8px 0 0 0;
+    font-weight: bold;
 }
 
 .product h2, .product h3{
@@ -62,8 +63,9 @@
 }
 
 .product h5{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 0 0 4px 0;
 }
 
 .show .mainProduct{
@@ -137,44 +139,99 @@
 .shirtH:hover{
     opacity: 0.6;
 }
+#add{
+    padding:4px 8px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+#add:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 500px){
+    .temp{
+        width: 75%;
+        height: 340px;
+        padding: 0 0 25px 0;
+    }
+    .temp:hover{
+        width: 78%;
+        height: 345px;
+    }
+    .temp img{
+        height: 70%;
+    }
+    .product h1{
+        font-size: 0.9rem;
+        padding: 8px 0 0 0;
+        font-weight: bold;
+    }
+    
+    .product h2, .product h3{
+        font-size: 1rem;;
+        opacity: 0.8;
+    }
+    
+    .product h5{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .show{
+        text-align: center;
+    }
+    .show .showProduct{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+     }
+ 
+     .show h1{
+         font-size: 1.0rem;
+         margin-top:10px;
+         font-weight: bold;
+     }
+     .show h3{
+         font-size: 1.0rem;
+         font-weight: 900;
+     }
+     .show .all{
+         padding:30px 20px 50px 20px;
+         width:90%;
+         border-radius: 10px;
+     }
+ 
+ 
+     .show .mainProduct{
+         width: 150px;
+         height: 130px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+     }
+     .img1, .img2, .img3{
+         width:50px;
+         height: 50px;
+     }
+     .img3{
+         display: none;
+     }
+
+     .q span{
+        margin: 2px;
+        font-size: 20px;
+     }
+}
   @media only screen and (max-width: 650px) {
-    .show
-    .show .showProduct{
-       flex-direction: column;
-       width: 80%;
-    }
 
-    .show h1{
-        font-size: 0.8rem;
-        margin-top:5px;
-    }
-    .show h3{
-        font-size: 1.0rem;
-        font-weight: 900;
-    }
-    .show .all{
-        padding:30px 20px 30px 20px;
-        width:90%;
-    }
-
-
-    .show .mainProduct{
-        width: 130px;
-        height: 130px;
-    }
-    .img1, .img2, .img3{
-        width:50px;
-        height: 50px;
-    }
-    .img3{
-        display: none;
-    }
+   
   }
 
 
   
   @media only screen and (min-width: 651px) and (max-width: 1000px) {
-    .show
+    
     .show .showProduct{
        flex-direction: column;
        width: 80%;
@@ -209,37 +266,4 @@
 
 
   
-  @media only screen and (min-width: 651px) and (max-width: 1000px) {
-    .show
-    .show .showProduct{
-       flex-direction: column;
-       width: 80%;
-    }
-
-    .show h1{
-        font-size: 1.2rem;
-        margin-top:5px;
-    }
-    .show h3{
-        font-size: 1.5rem;
-        font-weight: 900;
-    }
-    .show .all{
-        padding:30px 20px 30px 20px;
-        width:80%;
-    }
-
-
-    .show .mainProduct{
-        width: 150px;
-        height: 150px;
-    }
-    .img1, .img2, .img3{
-        width:60px;
-        height: 60px;
-    }
-    .img3{
-        display: none;
-    }
-  }
-
+  
