@@ -49,7 +49,7 @@ const makePayment = document.querySelector('.makePayment');
         })
         dett.innerHTML = showItem;
     }
-
+    
     //remove button... remove an item from shopping cart......
     let arr = document.querySelectorAll('.remove');
     for(let i = 0; i < arr.length; i++){

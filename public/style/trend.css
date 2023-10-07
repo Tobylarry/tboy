@@ -8,8 +8,9 @@
 }
 .trend{
     width:80%;
-    margin: 0 auto;
+    margin: 0 auto 170px auto;
 }
+
 
 .row {
     display: flex;
